@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_780173221d880f49c2effd1c55c6b9c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_780173221d880f49c2effd1c55c6b9c3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_780173221d880f49c2effd1c55c6b9c3 = L.map(
+                "map_780173221d880f49c2effd1c55c6b9c3",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ac165c96d292979c73fac8691179e9a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1ac165c96d292979c73fac8691179e9a.addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var poly_line_b59077fd5ce7a6564adeaf4fca4a3c0f = L.polyline(
+                [[28.6139, 77.209], [33.6844, 73.0479]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var marker_3a24123f3805f1f216d40c8f6c537658 = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_62757f395d0e183c5d9eabdd9600e2a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a24123f3805f1f216d40c8f6c537658.setIcon(icon_62757f395d0e183c5d9eabdd9600e2a1);
+        
+    
+        var popup_c8580ad5a7c702dace8f6efbcd7d823d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4389183e111960e4ca5f05212747b592 = $(`<div id="html_4389183e111960e4ca5f05212747b592" style="width: 100.0%; height: 100.0%;">India (Origin)</div>`)[0];
+                popup_c8580ad5a7c702dace8f6efbcd7d823d.setContent(html_4389183e111960e4ca5f05212747b592);
+            
+        
+
+        marker_3a24123f3805f1f216d40c8f6c537658.bindPopup(popup_c8580ad5a7c702dace8f6efbcd7d823d)
+        ;
+
+        
+    
+    
+            var marker_9e8241852d9e424e3eab28a9f1e0690e = L.marker(
+                [33.6844, 73.0479],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_4b5e57918656940ea54c2acdee0ca856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e8241852d9e424e3eab28a9f1e0690e.setIcon(icon_4b5e57918656940ea54c2acdee0ca856);
+        
+    
+        var popup_bd4f469b65e9ea471ccc7786abe76424 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac0e50e64f915aeaf8fabab3d6a86090 = $(`<div id="html_ac0e50e64f915aeaf8fabab3d6a86090" style="width: 100.0%; height: 100.0%;">Pakistan (Destination)</div>`)[0];
+                popup_bd4f469b65e9ea471ccc7786abe76424.setContent(html_ac0e50e64f915aeaf8fabab3d6a86090);
+            
+        
+
+        marker_9e8241852d9e424e3eab28a9f1e0690e.bindPopup(popup_bd4f469b65e9ea471ccc7786abe76424)
+        ;
+
+        
+    
+    
+            var poly_line_dc8ad1bf28b41f390a00a03c33a46d59 = L.polyline(
+                [[55.7558, 37.6173], [50.4501, 30.5234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var marker_64c5e7f467a7cdef703d3b880e165b56 = L.marker(
+                [55.7558, 37.6173],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_c93419810eee26b85840c4198ac72d84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64c5e7f467a7cdef703d3b880e165b56.setIcon(icon_c93419810eee26b85840c4198ac72d84);
+        
+    
+        var popup_d763da75a0647b84a44d1932f33dcf71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60ec23b86b5b5b33708ee236baf4fb78 = $(`<div id="html_60ec23b86b5b5b33708ee236baf4fb78" style="width: 100.0%; height: 100.0%;">Russian Federation (Origin)</div>`)[0];
+                popup_d763da75a0647b84a44d1932f33dcf71.setContent(html_60ec23b86b5b5b33708ee236baf4fb78);
+            
+        
+
+        marker_64c5e7f467a7cdef703d3b880e165b56.bindPopup(popup_d763da75a0647b84a44d1932f33dcf71)
+        ;
+
+        
+    
+    
+            var marker_c5883be59e46bd0dda35c91bde7a69db = L.marker(
+                [50.4501, 30.5234],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_eb844d8f8d7591722db3f5885a1c53b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c5883be59e46bd0dda35c91bde7a69db.setIcon(icon_eb844d8f8d7591722db3f5885a1c53b5);
+        
+    
+        var popup_308272acdd0dc8f31d6d6790ded6d06f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d69c883cf50972f87d385af11ea4756 = $(`<div id="html_2d69c883cf50972f87d385af11ea4756" style="width: 100.0%; height: 100.0%;">Ukraine (Destination)</div>`)[0];
+                popup_308272acdd0dc8f31d6d6790ded6d06f.setContent(html_2d69c883cf50972f87d385af11ea4756);
+            
+        
+
+        marker_c5883be59e46bd0dda35c91bde7a69db.bindPopup(popup_308272acdd0dc8f31d6d6790ded6d06f)
+        ;
+
+        
+    
+    
+            var poly_line_3721a56cb652908287629d1f38dcbd9c = L.polyline(
+                [[19.4326, -99.1332], [38.9072, -77.0369]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var marker_442f6e5cc82022ea4110579e0c0e373a = L.marker(
+                [19.4326, -99.1332],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_6aa0a01690121058a074a9b63008d92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_442f6e5cc82022ea4110579e0c0e373a.setIcon(icon_6aa0a01690121058a074a9b63008d92b);
+        
+    
+        var popup_cc1db3408eecc1a05380b3a9c970cfe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2ac247573150f28d3dc48d8fa145dd8 = $(`<div id="html_a2ac247573150f28d3dc48d8fa145dd8" style="width: 100.0%; height: 100.0%;">Mexico (Origin)</div>`)[0];
+                popup_cc1db3408eecc1a05380b3a9c970cfe6.setContent(html_a2ac247573150f28d3dc48d8fa145dd8);
+            
+        
+
+        marker_442f6e5cc82022ea4110579e0c0e373a.bindPopup(popup_cc1db3408eecc1a05380b3a9c970cfe6)
+        ;
+
+        
+    
+    
+            var marker_02c0e9bbeac3119d72b1b7d35debfa27 = L.marker(
+                [38.9072, -77.0369],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_689455ba94901d6bef260f0aa96cc67f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_02c0e9bbeac3119d72b1b7d35debfa27.setIcon(icon_689455ba94901d6bef260f0aa96cc67f);
+        
+    
+        var popup_5ce762e1c04d542be453f355718ce56d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a047ddd739ed3d752bb265eb1aac200c = $(`<div id="html_a047ddd739ed3d752bb265eb1aac200c" style="width: 100.0%; height: 100.0%;">United States (Destination)</div>`)[0];
+                popup_5ce762e1c04d542be453f355718ce56d.setContent(html_a047ddd739ed3d752bb265eb1aac200c);
+            
+        
+
+        marker_02c0e9bbeac3119d72b1b7d35debfa27.bindPopup(popup_5ce762e1c04d542be453f355718ce56d)
+        ;
+
+        
+    
+    
+            var poly_line_f14a50f657222b136ff66b28948ea965 = L.polyline(
+                [[51.1694, 71.4491], [55.7558, 37.6173]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var marker_b62e551a988380795a4c90bf03d8a9fe = L.marker(
+                [51.1694, 71.4491],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_ceb9281b7619c68c50be07e9bc0bff20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b62e551a988380795a4c90bf03d8a9fe.setIcon(icon_ceb9281b7619c68c50be07e9bc0bff20);
+        
+    
+        var popup_4b7d4a3e928e41fea1d8534824c603ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_050fb29353558419ffd04ff082a844b8 = $(`<div id="html_050fb29353558419ffd04ff082a844b8" style="width: 100.0%; height: 100.0%;">Kazakhstan (Origin)</div>`)[0];
+                popup_4b7d4a3e928e41fea1d8534824c603ff.setContent(html_050fb29353558419ffd04ff082a844b8);
+            
+        
+
+        marker_b62e551a988380795a4c90bf03d8a9fe.bindPopup(popup_4b7d4a3e928e41fea1d8534824c603ff)
+        ;
+
+        
+    
+    
+            var marker_25d4a1c494c217879b404074dc0222a3 = L.marker(
+                [55.7558, 37.6173],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_c603ea4e8a08ed0b56d78c6d0db144ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25d4a1c494c217879b404074dc0222a3.setIcon(icon_c603ea4e8a08ed0b56d78c6d0db144ea);
+        
+    
+        var popup_1ddc17f908945633770a6eefbe9fa35d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08c9384f958210da28c2d606056c0889 = $(`<div id="html_08c9384f958210da28c2d606056c0889" style="width: 100.0%; height: 100.0%;">Russian Federation (Destination)</div>`)[0];
+                popup_1ddc17f908945633770a6eefbe9fa35d.setContent(html_08c9384f958210da28c2d606056c0889);
+            
+        
+
+        marker_25d4a1c494c217879b404074dc0222a3.bindPopup(popup_1ddc17f908945633770a6eefbe9fa35d)
+        ;
+
+        
+    
+    
+            var poly_line_b58cde4b24c415392b01630303626828 = L.polyline(
+                [[23.8103, 90.4125], [28.6139, 77.209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var marker_3d8f9b1d3245e16a76d0d5af412d10a3 = L.marker(
+                [23.8103, 90.4125],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_1eb7a1776b9b005500475b4c824e5749 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d8f9b1d3245e16a76d0d5af412d10a3.setIcon(icon_1eb7a1776b9b005500475b4c824e5749);
+        
+    
+        var popup_e2e1d9a472ac189abdb8178af5ac1ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_108f8a520ffe427cc149253f7c4f2044 = $(`<div id="html_108f8a520ffe427cc149253f7c4f2044" style="width: 100.0%; height: 100.0%;">Bangladesh (Origin)</div>`)[0];
+                popup_e2e1d9a472ac189abdb8178af5ac1ea4.setContent(html_108f8a520ffe427cc149253f7c4f2044);
+            
+        
+
+        marker_3d8f9b1d3245e16a76d0d5af412d10a3.bindPopup(popup_e2e1d9a472ac189abdb8178af5ac1ea4)
+        ;
+
+        
+    
+    
+            var marker_ece36e6d312b2adda164fc4d5a4a756f = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_780173221d880f49c2effd1c55c6b9c3);
+        
+    
+            var icon_ed2d3aec9f0242a4f6f2a4f0b41986d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ece36e6d312b2adda164fc4d5a4a756f.setIcon(icon_ed2d3aec9f0242a4f6f2a4f0b41986d1);
+        
+    
+        var popup_8d78bf9715d94c2cdd2c94f173eb25e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d03eeb0b8eb27a94245394c78f135156 = $(`<div id="html_d03eeb0b8eb27a94245394c78f135156" style="width: 100.0%; height: 100.0%;">India (Destination)</div>`)[0];
+                popup_8d78bf9715d94c2cdd2c94f173eb25e9.setContent(html_d03eeb0b8eb27a94245394c78f135156);
+            
+        
+
+        marker_ece36e6d312b2adda164fc4d5a4a756f.bindPopup(popup_8d78bf9715d94c2cdd2c94f173eb25e9)
+        ;
+
+        
+    
+</script>
+</html>
